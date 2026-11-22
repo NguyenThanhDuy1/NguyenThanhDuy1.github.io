@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    margin-top: 20px;
+}
+
+.description {
+    text-align: center;
+    color: darkblue;
+}
+
+#hoca {
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+
+    width: 95%;
+    height: 75%;
+
+    background-color: rgba(96, 210, 255, 0.3);
+
+    border: 5px solid black;
+    border-top: none;
+
+    overflow: hidden;
+}
+
+.fish {
+    position: absolute;
+    height: auto;
+}
+
+.school {
+    width: 220px;
+    top: 10%;
+    left: 5%;
+
+    animation: swim 18s linear infinite;
+}
+
+.gold {
+    width: 180px;
+    top: 35%;
+    left: 15%;
+
+    animation: swim 14s linear infinite;
+}
+
+.shark {
+    width: 200px;
+    top: 55%;
+    left: 45%;
+
+    animation: swim 20s linear infinite;
+}
+
+.turtle {
+    width: 130px;
+    top: 65%;
+    left: 10%;
+
+    animation: swim 22s linear infinite;
+}
+
+.diver {
+    position: absolute;
+    width: 100px;
+    height: auto;
+}
+
+.diver1 {
+    top: 10%;
+    left: 70%;
+}
+
+.diver2 {
+    top: 40%;
+    left: 80%;
+}
+
+.diver3 {
+    top: 65%;
+    left: 60%;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(250px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
